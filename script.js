@@ -11,7 +11,7 @@ async function checkPrice() {
 
   try {
     // Replace with your backend API URL later
-    const response = await fetch(`https://your-backend.vercel.app/api/price-check?query=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://serpapi.com/api/price-check?query=${encodeURIComponent(query)}`);
     const data = await response.json();
 
     if (data.length === 0) {
